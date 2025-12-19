@@ -4,16 +4,15 @@ body {
     background-color: #f5f5f5;
 }
 body::before {
-    content: ""; /* Required for pseudo-elements to render */
-    background-image: url("https://i.pinimg.com/736x/13/36/ae/1336ae5845f6e180b769e97b87d03704.jpg");/* Set your image path */
-    /*background-size: cover; !* Ensures the image covers the entire background *!*/
-    position: fixed; /* Positions the pseudo-element relative to the body */
+    content: "";
+    background-image: url("https://i.pinimg.com/736x/13/36/ae/1336ae5845f6e180b769e97b87d03704.jpg");
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; /* Makes the pseudo-element cover the entire body */
-    opacity: 0.85; /* Adjust the transparency (0.0 to 1.0) */
-    z-index: -1; /* Pushes the background layer behind the content */
+    bottom: 0;
+    opacity: 0.85;
+    z-index: -1;
 }
 
 h1 {
@@ -66,20 +65,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.outer-box{
-    width: 35%;
-    margin-left: 34.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .card {
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
     padding: 20px;
-    margin: 10px 0;
+    border-radius: 10px;
+    margin: 20px;
     width: 200px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
