@@ -27,13 +27,6 @@ This project demonstrates **clean architecture**, **RESTful API design**, and **
 * Return books only to the correct member
 * Automatically update book availability
 
-### 💰 Fine Calculation
-
-* **7-day borrowing period**
-* ₹10 per day fine for overdue returns
-* Fine calculated using **Java Time API**
-* Fine details returned to frontend
-
 ### 🛡 Data Integrity & Validation
 
 * Centralized exception handling
