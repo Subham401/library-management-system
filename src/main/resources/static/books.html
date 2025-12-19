@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="books.html">Books</a>
+    <a href="members.html">Members</a>
+    <a href="issue.html">Issue / Return</a>
+</nav>
+<div class="content-box">
+
+    <h1>Library Books</h1>
+</div>
+<div class="content-box">
+    <h3>Add Book</h3>
+    <input id="title" placeholder="Title">
+    <input id="author" placeholder="Author">
+    <input id="isbn" placeholder="ISBN">
+    <input id="copies" type="number" placeholder="Total Copies">
+    <button onclick="addBook()">Add</button>
+
+    <p class="error" id="error"></p>
+</div>
+<div class="content-box">
+    <h3>All Books</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Available</th>
+        </tr>
+        </thead>
+        <tbody id="bookTable"></tbody>
+    </table>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/books.js"></script>
+</body>
+</html>

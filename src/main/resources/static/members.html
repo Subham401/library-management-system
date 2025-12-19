@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="books.html">Books</a>
+    <a href="members.html">Members</a>
+    <a href="issue.html">Issue / Return</a>
+</nav>
+<div class="content-box">
+    <h1>Library Members</h1>
+</div>
+<div class="content-box">
+    <h3>Add Member</h3>
+    <input id="memberName" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <input id="phone" placeholder="Phone">
+    <button onclick="addMember()">Add</button>
+
+    <p class="error" id="error"></p>
+</div>
+<div class="content-box">
+
+<h3>All Members</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        </thead>
+        <tbody id="memberTable"></tbody>
+    </table>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/members.js"></script>
+</body>
+</html>
