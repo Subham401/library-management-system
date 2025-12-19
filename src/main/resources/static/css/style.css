@@ -7,7 +7,7 @@ body::before {
     content: ""; /* Required for pseudo-elements to render */
     background-image: url("https://i.pinimg.com/736x/13/36/ae/1336ae5845f6e180b769e97b87d03704.jpg");/* Set your image path */
     /*background-size: cover; !* Ensures the image covers the entire background *!*/
-    position: absolute; /* Positions the pseudo-element relative to the body */
+    position: fixed; /* Positions the pseudo-element relative to the body */
     top: 0;
     left: 0;
     right: 0;
