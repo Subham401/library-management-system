@@ -1,5 +1,6 @@
 package com.lms.librarymanagementsystem.service;
 
+import com.lms.librarymanagementsystem.dto.IssueRecordDTO;
 import com.lms.librarymanagementsystem.exception.BadRequestException;
 import com.lms.librarymanagementsystem.exception.ResourceNotFoundException;
 import com.lms.librarymanagementsystem.model.Book;
@@ -12,6 +13,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 public class IssueService {
@@ -62,4 +64,17 @@ public class IssueService {
         bookRepository.save(book);
         return issueRecordRepository.save(record);
     }
+
+    public List<IssueRecordDTO> getAllIssuedBooks() {
+        return issueRecordRepository.findAll()
+                .stream()
+                .map(record -> new IssueRecordDTO(
+                        record.getBook().getTitle(),
+                        record.getMember().getName(),
+                        record.getIssueDate(),
+                        record.getReturnDate()
+                ))
+                .toList();
+    }
+
 }

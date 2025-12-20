@@ -1,8 +1,11 @@
 package com.lms.librarymanagementsystem.controller;
 
+import com.lms.librarymanagementsystem.dto.IssueRecordDTO;
 import com.lms.librarymanagementsystem.model.IssueRecords;
 import com.lms.librarymanagementsystem.service.IssueService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/issues")
@@ -25,4 +28,10 @@ public class IssueController {
                                    @RequestParam Long memberId){
         return issueService.returnBook(bookId,memberId);
     }
+
+    @GetMapping
+    public List<IssueRecordDTO> getAllIssuedBooks() {
+        return issueService.getAllIssuedBooks();
+    }
+
 }

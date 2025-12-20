@@ -65,7 +65,7 @@ nav a:hover {
     text-decoration: underline;
 }
 .card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .form-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     padding: 25px;
     width: 300px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 .content-box {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;

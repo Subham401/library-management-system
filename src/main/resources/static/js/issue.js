@@ -118,4 +118,4 @@ async function returnBook(event) {
 
 loadBooks();
 loadMembers();
-
+loadIssuedBooks();
