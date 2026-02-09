@@ -24,6 +24,8 @@ async function loadIssuedBooks() {
             <td>${issue.memberName}</td>
             <td>${issue.issueDate}</td>
             <td>${issue.returnDate ? "Returned" : "Issued"}</td>
+            <td>${issue.returnDate ?? "-"}</td>
+            <td>${issue.fine ?? 0}</td>
         `;
 
         tbody.appendChild(row);

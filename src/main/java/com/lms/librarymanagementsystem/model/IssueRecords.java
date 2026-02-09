@@ -26,6 +26,8 @@ public class IssueRecords {
 
     private Double fine;
 
+    private LocalDate dueDate;
+
     public IssueRecords(){}
 
     public IssueRecords(Book book, Member member, LocalDate issueDate){
@@ -80,5 +82,13 @@ public class IssueRecords {
 
     public void setFine(Double fine) {
         this.fine = fine;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
     }
 }

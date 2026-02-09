@@ -7,13 +7,19 @@ public class IssueRecordDTO {
     private String memberName;
     private LocalDate issueDate;
     private LocalDate returnDate;
+    private Double fine;
 
     public IssueRecordDTO(String bookTitle, String memberName,
-                          LocalDate issueDate, LocalDate returnDate) {
+                          LocalDate issueDate, LocalDate returnDate, Double fine) {
         this.bookTitle = bookTitle;
         this.memberName = memberName;
         this.issueDate = issueDate;
         this.returnDate = returnDate;
+        this.fine = fine;
+    }
+
+    public Double getFine() {
+        return fine;
     }
 
     public String getBookTitle() {

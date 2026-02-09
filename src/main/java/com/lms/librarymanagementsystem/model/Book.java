@@ -31,6 +31,18 @@ public class Book {
     @Column(nullable = false)
     private int availableCopies;
 
+    @Version
+    @Column(nullable = false)
+    private Integer version = 0;
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
     public Book() {}
 
     public Book(String title, String author, String isbn, int totalCopies){
